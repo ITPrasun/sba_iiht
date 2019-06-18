@@ -7,10 +7,10 @@ namespace FSE_ProjMgr.ProjMgrBC
 {
     public class UserBc
     {
-        ProjMgrDAC.ProjectManagerEntities dbContext = null;
+        ProjMgrDAC.ProjectManagerEntities1 dbContext = null;
         public UserBc()
         {
-            dbContext = new ProjMgrDAC.ProjectManagerEntities();
+            dbContext = new ProjMgrDAC.ProjectManagerEntities1();
         }
         public List<Models.User> GetAllUsers()
         {

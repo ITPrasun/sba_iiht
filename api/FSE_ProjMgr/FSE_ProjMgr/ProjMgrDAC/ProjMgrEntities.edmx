@@ -98,7 +98,7 @@
           <Property Name="Task_ID" Type="Int32" />
           <Property Name="Project_ID" Type="Int32" />
         </EntityType>
-        <EntityContainer Name="ProjectManagerEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ProjectManagerEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ParentTasks" EntityType="Self.ParentTask" />
           <EntitySet Name="Projects" EntityType="Self.Project" />
           <EntitySet Name="Tasks" EntityType="Self.Task" />
@@ -109,7 +109,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ProjectManagerModelStoreContainer" CdmEntityContainer="ProjectManagerEntities">
+        <EntityContainerMapping StorageEntityContainer="ProjectManagerModelStoreContainer" CdmEntityContainer="ProjectManagerEntities1">
           <EntitySetMapping Name="ParentTasks">
             <EntityTypeMapping TypeName="ProjectManagerModel.ParentTask">
               <MappingFragment StoreEntitySet="ParentTask">

@@ -103,15 +103,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="ProjMgrDAC\ProjMgrEntity.Context.tt">
+    <Content Include="ProjMgrDAC\ProjMgrEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ProjMgrEntity.Context.cs</LastGenOutput>
-      <DependentUpon>ProjMgrEntity.edmx</DependentUpon>
+      <DependentUpon>ProjMgrEntities.edmx</DependentUpon>
+      <LastGenOutput>ProjMgrEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ProjMgrDAC\ProjMgrEntity.tt">
+    <Content Include="ProjMgrDAC\ProjMgrEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ProjMgrEntity.edmx</DependentUpon>
-      <LastGenOutput>ProjMgrEntity.cs</LastGenOutput>
+      <DependentUpon>ProjMgrEntities.edmx</DependentUpon>
+      <LastGenOutput>ProjMgrEntities.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -119,6 +119,7 @@
     <Compile Include="ActionFilters\ExceptionLogFilter.cs" />
     <Compile Include="ActionFilters\TransactionLogFilter.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\TaskController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
@@ -134,42 +135,42 @@
     <Compile Include="ProjMgrBC\TaskBc.cs" />
     <Compile Include="ProjMgrBC\UserBc.cs" />
     <Compile Include="ProjMgrDAC\ParentTask.cs">
-      <DependentUpon>ProjMgrEntity.tt</DependentUpon>
+      <DependentUpon>ProjMgrEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="ProjMgrDAC\Project.cs">
-      <DependentUpon>ProjMgrEntity.tt</DependentUpon>
+      <DependentUpon>ProjMgrEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="ProjMgrDAC\ProjMgrEntity.Context.cs">
+    <Compile Include="ProjMgrDAC\ProjMgrEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProjMgrEntity.Context.tt</DependentUpon>
+      <DependentUpon>ProjMgrEntities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ProjMgrDAC\ProjMgrEntity.cs">
+    <Compile Include="ProjMgrDAC\ProjMgrEntities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProjMgrEntity.tt</DependentUpon>
+      <DependentUpon>ProjMgrEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="ProjMgrDAC\ProjMgrEntity.Designer.cs">
+    <Compile Include="ProjMgrDAC\ProjMgrEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProjMgrEntity.edmx</DependentUpon>
+      <DependentUpon>ProjMgrEntities.edmx</DependentUpon>
     </Compile>
     <Compile Include="ProjMgrDAC\Task.cs">
-      <DependentUpon>ProjMgrEntity.tt</DependentUpon>
+      <DependentUpon>ProjMgrEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="ProjMgrDAC\User.cs">
-      <DependentUpon>ProjMgrEntity.tt</DependentUpon>
+      <DependentUpon>ProjMgrEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <EntityDeploy Include="ProjMgrDAC\ProjMgrEntity.edmx">
+    <EntityDeploy Include="ProjMgrDAC\ProjMgrEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ProjMgrEntity.Designer.cs</LastGenOutput>
+      <LastGenOutput>ProjMgrEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="ProjMgrDAC\ProjMgrEntity.edmx.diagram">
-      <DependentUpon>ProjMgrEntity.edmx</DependentUpon>
+    <Content Include="ProjMgrDAC\ProjMgrEntities.edmx.diagram">
+      <DependentUpon>ProjMgrEntities.edmx</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

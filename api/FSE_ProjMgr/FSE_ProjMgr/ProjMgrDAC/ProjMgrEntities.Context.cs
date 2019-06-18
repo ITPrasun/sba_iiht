@@ -13,10 +13,10 @@ namespace FSE_ProjMgr.ProjMgrDAC
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ProjectManagerEntities : DbContext
+    public partial class ProjectManagerEntities1 : DbContext
     {
-        public ProjectManagerEntities()
-            : base("name=ProjectManagerEntities")
+        public ProjectManagerEntities1()
+            : base("name=ProjectManagerEntities1")
         {
         }
     

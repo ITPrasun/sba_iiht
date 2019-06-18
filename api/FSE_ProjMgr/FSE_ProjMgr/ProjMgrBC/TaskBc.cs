@@ -9,20 +9,22 @@ namespace FSE_ProjMgr.ProjMgrBC
 {
     public class TaskBc
     {
-        ProjMgrDAC.ProjectManagerEntities dbContext = null;
+        ProjMgrDAC.ProjectManagerEntities1 dbContext = null;
         public TaskBc()
         {
-            dbContext = new ProjMgrDAC.ProjectManagerEntities();
+            dbContext = new ProjMgrDAC.ProjectManagerEntities1();
         }
         public List<Models.Task> GetTaskByProjId(int projId)
         {
             using (dbContext)
             {
+                var yy = dbContext.Projects.FirstOrDefault();
+                var xx = dbContext.ParentTasks.FirstOrDefault();
                 return dbContext.Tasks.Where(z => z.Project_ID == projId).Select(x => new Models.Task()
                 {
                     TaskId = x.Task_ID,
                     TaskName = x.Task_Name,
-                    ParentTaskName = dbContext.ParentTasks.Where(y => y.ParentID == x.Parent_ID).FirstOrDefault().ParentTaskName,
+                    ParentTaskName = dbContext.ParentTasks.Where(y => y.Parent_ID == x.Parent_ID).FirstOrDefault().Parent_Task_Name,
                     StartDate = x.Start_Date,
                     EndDate = x.End_Date,
                     Priority = x.Priority,
@@ -43,8 +45,8 @@ namespace FSE_ProjMgr.ProjMgrBC
             {
                 return dbContext.ParentTasks.Select(x => new ParentTask()
                 {
-                    ParentID = x.ParentID,
-                    ParentTaskName = x.ParentTaskName
+                    Parent_ID = x.Parent_ID,
+                    Parent_Task_Name = x.Parent_Task_Name
                 }).ToList();
             }
         }
@@ -57,7 +59,7 @@ namespace FSE_ProjMgr.ProjMgrBC
                 {
                     dbContext.ParentTasks.Add(new ProjMgrDAC.ParentTask()
                     {
-                        ParentTaskName = task.TaskName
+                        Parent_Task_Name = task.TaskName
 
                     });
                 }

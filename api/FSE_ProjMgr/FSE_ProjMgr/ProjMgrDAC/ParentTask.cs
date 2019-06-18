@@ -14,7 +14,7 @@ namespace FSE_ProjMgr.ProjMgrDAC
     
     public partial class ParentTask
     {
-        public int ParentID { get; set; }
-        public string ParentTaskName { get; set; }
+        public int Parent_ID { get; set; }
+        public string Parent_Task_Name { get; set; }
     }
 }
