@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\packages\NBench.1.2.2\lib\net452\NBench.dll" total="0" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-06-19" time="23:10:10">
+  <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.8662" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Windows\system32" machine-name="DOTNET" user="Administrator" user-domain="DOTNET" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\packages\NBench.1.2.2\lib\net452\NBench.dll" executed="True" result="Inconclusive" success="False" time="0.035" asserts="0" />
+</test-results>
