@@ -19,6 +19,10 @@ namespace FSE_ProjMgr.Controllers
         {
             userbc = new UserBc();
         }
+        public UsersController(UserBc userBC)
+        {
+            userbc = userBC;
+        }
 
         [HttpGet]
         [ExceptionLogFilter]
@@ -39,26 +43,30 @@ namespace FSE_ProjMgr.Controllers
         [Route("user/adduser")]
         public JsonResponse AddUser(User user)
         {
+            if (user == null)
+            {
+                throw new ArgumentNullException("User id is null");
+            }
             try
             {
-                if (user == null)
-                    throw new ArgumentNullException("User id is null!");
                 int employeeId = Convert.ToInt32(user.EmployeeId);
-                int projectId = Convert.ToInt32(user.ProjectId);
-                if (employeeId < 0)
-                    throw new ArithmeticException("Employee id cannot be negative!");
-                if (projectId < 0)
-                    throw new ArithmeticException("Project id cannot be negative!");
-
-                return new JsonResponse()
-                {
-                    Data = userbc.AddUser(user)
-                };
             }
-            catch (Exception ex)
+            catch (FormatException ex)
             {
-                throw new FormatException("Invalid format of employee Id or project Id!", ex);
+                throw new FormatException("Invalid format of employee Id", ex);
             }
+            if (Convert.ToInt32(user.EmployeeId) < 0)
+            {
+                throw new ArithmeticException("Employee id cannot be negative");
+            }
+            if (Convert.ToInt32(user.ProjectId) < 0)
+            {
+                throw new ArithmeticException("Project id cannot be negative");
+            }
+            return new JsonResponse()
+            {
+                Data = userbc.AddUser(user)
+            };
         }
 
         [HttpPost]
@@ -67,26 +75,34 @@ namespace FSE_ProjMgr.Controllers
         [Route("user/updateuser")]
         public JsonResponse UpdateUser(User user)
         {
+            if (user == null)
+            {
+                throw new ArgumentNullException("User id is null");
+            }
             try
             {
-                if (user == null)
-                    throw new ArgumentNullException("User id is null!");
                 int employeeId = Convert.ToInt32(user.EmployeeId);
-                int projectId = Convert.ToInt32(user.ProjectId);
-                if (employeeId < 0)
-                    throw new ArithmeticException("Employee id cannot be negative!");
-                if (projectId < 0)
-                    throw new ArithmeticException("Project id cannot be negative!");
-
-                return new JsonResponse()
-                {
-                    Data = userbc.UpdateUser(user)
-                };
             }
-            catch (Exception ex)
+            catch (FormatException ex)
             {
-                throw new FormatException("Invalid format of employee Id or project Id!", ex);
+                throw new FormatException("Invalid format of employee Id", ex);
             }
+            if (Convert.ToInt32(user.EmployeeId) < 0)
+            {
+                throw new ArithmeticException("Employee id cannot be negative");
+            }
+            if (Convert.ToInt32(user.ProjectId) < 0)
+            {
+                throw new ArithmeticException("Project id cannot be negative");
+            }
+            if (user.UserId <= 0)
+            {
+                throw new ArithmeticException("User id cannot be negative or 0");
+            }
+            return new JsonResponse()
+            {
+                Data = userbc.UpdateUser(user)
+            };
         }
 
         [HttpPost]
@@ -95,26 +111,35 @@ namespace FSE_ProjMgr.Controllers
         [Route("user/deleteuser")]
         public JsonResponse DeleteUser(User user)
         {
-            try
-            {
+          
                 if (user == null)
+                {
                     throw new ArgumentNullException("User id is null!");
-                int employeeId = Convert.ToInt32(user.EmployeeId);
-                int projectId = Convert.ToInt32(user.ProjectId);
-                if (employeeId < 0)
+                }
+                try
+                {
+                    int employeeId = Convert.ToInt32(user.EmployeeId);
+                }
+                catch (FormatException ex)
+                {
+                    throw new FormatException("Invalid format of employee Id!", ex);
+                }
+                if (Convert.ToInt32(user.EmployeeId) < 0)
+                {
                     throw new ArithmeticException("Employee id cannot be negative!");
-                if (projectId < 0)
+                }
+                if (Convert.ToInt32(user.ProjectId) < 0)
+                {
                     throw new ArithmeticException("Project id cannot be negative!");
-
+                }
+                if (user.UserId <= 0)
+                {
+                    throw new ArithmeticException("User id cannot be negative or 0!");
+                }
                 return new JsonResponse()
                 {
                     Data = userbc.DeleteUser(user)
                 };
-            }
-            catch (Exception ex)
-            {
-                throw new FormatException("Invalid format of employee Id or project Id!", ex);
-            }
         }
     }
 }

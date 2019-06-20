@@ -20,6 +20,10 @@ namespace FSE_ProjMgr.Controllers
         {
             taskObj = new TaskBc();
         }
+        public TaskController(TaskBc taskBC)
+        {
+            taskObj = taskBC;
+        }
         [HttpGet]
         [Route("task/tasksbyprojid/{projId}")]
         [ExceptionLogFilter]

@@ -20,6 +20,10 @@ namespace FSE_ProjMgr.Controllers
         {
             projObjBC = new ProjBc();
         }
+        public ProjectController(ProjBc projBC)
+        {
+            projObjBC = projBC;
+        }
         [HttpGet]
         [ExceptionLogFilter]
         [TransactionLogFilter]

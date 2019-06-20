@@ -12,6 +12,10 @@ namespace FSE_ProjMgr.ProjMgrBC
         {
             dbContext = new ProjMgrDAC.ProjectManagerEntities1();
         }
+        public ProjBc(ProjMgrDAC.ProjectManagerEntities1 context)
+        {
+            dbContext = context;
+        }
         public List<Models.Project> GetProjects()
         {
             using (dbContext)

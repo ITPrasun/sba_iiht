@@ -14,6 +14,10 @@ namespace FSE_ProjMgr.ProjMgrBC
         {
             dbContext = new ProjMgrDAC.ProjectManagerEntities1();
         }
+        public TaskBc(ProjMgrDAC.ProjectManagerEntities1 context)
+        {
+            dbContext = context;
+        }
         public List<Models.Task> GetTaskByProjId(int projId)
         {
             using (dbContext)

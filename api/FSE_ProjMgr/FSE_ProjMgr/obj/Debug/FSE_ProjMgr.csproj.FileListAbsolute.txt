@@ -99,6 +99,5 @@ C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\FSE_ProjMgr\bin\System.We
 C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\FSE_ProjMgr\bin\System.Web.Http.Cors.xml
 C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\FSE_ProjMgr\bin\Newtonsoft.Json.xml
 C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\FSE_ProjMgr\bin\System.Web.Http.WebHost.xml
-C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\FSE_ProjMgr\obj\Debug\FSE_ProjMgr.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\FSE_ProjMgr\obj\Debug\FSE_ProjMgr.dll
 C:\Users\Administrator\Desktop\gitrepo\api\FSE_ProjMgr\FSE_ProjMgr\obj\Debug\FSE_ProjMgr.pdb
