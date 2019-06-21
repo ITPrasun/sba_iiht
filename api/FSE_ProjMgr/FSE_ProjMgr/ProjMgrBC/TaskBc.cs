@@ -24,6 +24,7 @@ namespace FSE_ProjMgr.ProjMgrBC
             {
                 var yy = dbContext.Projects.FirstOrDefault();
                 var xx = dbContext.ParentTasks.FirstOrDefault();
+
                 return dbContext.Tasks.Where(z => z.Project_ID == projId).Select(x => new Models.Task()
                 {
                     TaskId = x.Task_ID,
@@ -45,14 +46,24 @@ namespace FSE_ProjMgr.ProjMgrBC
 
         public List<ParentTask> GetParentTasks()
         {
+            List<ParentTask> lst = new List<ParentTask>();
             using (dbContext)
             {
-                return dbContext.ParentTasks.Select(x => new ParentTask()
+                var contextLst = dbContext.ParentTasks.Select(x => x);
+                foreach(ParentTask pt in contextLst)
                 {
-                    Parent_ID = x.Parent_ID,
-                    Parent_Task_Name = x.Parent_Task_Name
-                }).ToList();
+                    ParentTask ptModel = new ParentTask();
+                    ptModel.Parent_ID = pt.Parent_ID;
+                    ptModel.Parent_Task_Name = pt.Parent_Task_Name;
+                    lst.Add(ptModel);
+                }
+                //return dbContext.ParentTasks.Select(x => new ParentTask()
+                //{
+                //    Parent_ID = x.Parent_ID,
+                //    Parent_Task_Name = x.Parent_Task_Name
+                //}).ToList();
             }
+            return lst;
         }
 
         public int InsertTask(Models.Task task)

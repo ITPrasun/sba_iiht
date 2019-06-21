@@ -1,0 +1,225 @@
+2019-06-21 04:27:07.7635|INFO|FSE_ProjMgr.Log.LoggingUtility|Operation Result Format: JSON
+Request ID: 8000002e-0000-f800-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/user/users
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : GetAllUsers
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:29:12.3937|INFO|FSE_ProjMgr.Log.LoggingUtility|Operation Result Format: JSON
+Request ID: 80000045-0000-fb00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/task/tasksbyprojid/-1
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : GetTaskByProjId
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:29:19.9837|INFO|FSE_ProjMgr.Log.LoggingUtility|Request ID: 80000045-0000-fb00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/task/tasksbyprojid/-1
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : GetTaskByProjId
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass12_0
+Error: ProjectId cannot be negative!
+
+
+2019-06-21 04:29:43.5784|INFO|FSE_ProjMgr.Log.LoggingUtility|Operation Result Format: JSON
+Request ID: 80000046-0000-fb00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/task/tasksbyprojid/1
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : GetTaskByProjId
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:29:48.7792|INFO|FSE_ProjMgr.Log.LoggingUtility|Operation Result Format: JSON
+Request ID: 80000042-0000-f900-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/task/tasksbyprojid/1
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : GetTaskByProjId
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:32:14.4377|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001f-0003-fd00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/task/tasksbyprojid/1
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : GetTaskByProjId
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:32:32.7543|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000016-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/project/getproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : GetProjects
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:32:37.8243|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000017-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/user/users
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : GetAllUsers
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:32:51.4913|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000019-0000-f700-b63f-84710c7967bb
+Method: POST
+URL: http://localhost:51409/user/adduser
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : AddUser
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:32:52.1072|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001a-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/user/users
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : GetAllUsers
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:32:54.8032|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001b-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/user/users
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : GetAllUsers
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:32:54.8552|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000017-0001-fe00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/project/getproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : GetProjects
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:11.1284|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000019-0001-fe00-b63f-84710c7967bb
+Method: POST
+URL: http://localhost:51409/project/addproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : AddProject
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:11.5004|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001c-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/project/getproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : GetProjects
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:11.5004|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001a-0001-fe00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/user/users
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : GetAllUsers
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:15.2275|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001d-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/user/users
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : GetAllUsers
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:20.5895|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001e-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/project/getproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : GetProjects
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:34.1144|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000020-0000-f700-b63f-84710c7967bb
+Method: POST
+URL: http://localhost:51409/task/addtask
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : InsertTask
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:36.6504|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000021-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/project/getproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : GetProjects
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:40.5110|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000022-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/task/tasksbyprojid/1
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : GetTaskByProjId
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:46.5010|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000023-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/project/getproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : GetProjects
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:33:53.2484|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000024-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/task/parent
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : GetParentTasks
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:34:01.7054|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000025-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/user/users
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : GetAllUsers
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:34:10.4797|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000027-0000-f700-b63f-84710c7967bb
+Method: POST
+URL: http://localhost:51409/task/addtask
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : InsertTask
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:34:13.0826|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 80000028-0000-f700-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/user/users
+Controller : FSE_ProjMgr.Controllers.UsersController
+Action : GetAllUsers
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:34:13.1537|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001b-0001-fe00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/project/getproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : GetProjects
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:34:15.2447|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001c-0001-fe00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/project/getproj
+Controller : FSE_ProjMgr.Controllers.ProjectController
+Action : GetProjects
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2019-06-21 04:34:18.5827|INFO|FSE_ProjMgr.Log.TransactionExceptionLogEntry|Operation Result Format: JSON
+Request ID: 8000001d-0001-fe00-b63f-84710c7967bb
+Method: GET
+URL: http://localhost:51409/task/tasksbyprojid/1
+Controller : FSE_ProjMgr.Controllers.TaskController
+Action : GetTaskByProjId
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
